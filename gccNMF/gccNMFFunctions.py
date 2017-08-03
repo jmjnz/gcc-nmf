@@ -57,7 +57,7 @@ def getTDOAsInSeconds(microphoneSeparationInMetres, numTDOAs):
     return tdoasInSeconds
 
 def getFrequenciesInHz(sampleRate, numFrequencies):
-    return linspace(0, sampleRate/2, numFrequencies)
+    return linspace(0, sampleRate/2.0, numFrequencies)
 
 def computeComplexMixtureSpectrogram(stereoSamples, windowSize, hopSize, windowFunction, fftSize=None):
     if fftSize is None:
